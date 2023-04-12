@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        'main-span': '72px'
+        'main-span': '72px',
       },
       colors: {
         'fb-bg': '#18191a',
