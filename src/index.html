@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind webpack basic</title>
+    <title>Facebook</title>
   </head>
-  <body class="bg-gray-800">
+  <body class="bg-fb-bg">
+    <header class="fixed left-0 right-0 top-0 h-[56px] w-full bg-fb-header"></header>
+
+    <main class="flex min-h-[100vh] pt-main-span">
+      <!-- 左側資訊欄 -->
+      <div class="sticky top-main-span hidden h-full w-full max-w-[280px] lg:block">
+        <p class="w-full bg-blue-300">左側資訊欄</p>
+      </div>
+
+      <!-- 動態牆 -->
+      <div class="mx-auto h-[200vh] w-full max-w-[720px]">
+        <p class="w-full bg-white">動態牆</p>
+      </div>
+
+      <!-- 右側聯絡人 -->
+      <div class="sticky top-main-span hidden h-full w-full max-w-[280px] lg:block">
+        <p class="w-full bg-green-300">右側聯絡人</p>
+      </div>
+    </main>
+
     <script src="./index.js"></script>
   </body>
 </html>
