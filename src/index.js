@@ -136,3 +136,68 @@ const renderLeftBlock = () => {
 };
 
 renderLeftBlock();
+
+// ------------ right info ------------
+const rightBlock = document.querySelector('#right-block');
+
+const renderRightItem = (name, imgURL) => {
+  const item = `
+    <div
+      class="flex w-full cursor-pointer items-center justify-items-center rounded px-1 py-2 hover:bg-fb-input"
+    >
+      <div class="w-[45px]">
+        <div class="relative w-[32px] cursor-pointer">
+          <div class="h-[32px] w-[32px] overflow-hidden rounded-full">
+            <img
+              src="${imgURL}"
+              alt="avator"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            class="absolute bottom-0 right-0 h-[8px] w-[8px] rounded-full bg-green-500 ring ring-gray-900"
+          ></div>
+        </div>
+      </div>
+      <p class="text-[.9rem] text-white">${name}</p>
+    </div>
+  `;
+  return item;
+};
+
+const renderRightBlock = () => {
+  let htmlStr = `<p class="mb-2 text-lg text-gray-400">聯絡人</p>`;
+
+  const itemsArr = [
+    { name: 'Nonna', imgURL: 'https://i.imgur.com/tQcTOLH.jpg' },
+    {
+      name: 'Naomi Chen',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/65873280_2568412379835598_4929082980615323648_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TgX5JNz4HIgAX-o5EPl&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAzNyoTMjD4Q5h_7xYaVAuiicIWrNsiZBfdZdfICSojaQ&oe=64608416',
+    },
+    {
+      name: 'Eric Chang',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/317811309_5442004795926380_4743840999032164787_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=emeTdx9S2FkAX_Tq3uh&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAIojHEpJlCf33ZxnXEziqgCOrR5NxR3GcWO8vVwuzkdQ&oe=643E881B',
+    },
+    {
+      name: 'Shane Lin',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/245342708_5052225001455280_3427608857536564216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J5DR4aGFndoAX__qezt&_nc_ht=scontent-tpe1-1.xx&oh=00_AfBU9wxbZnmidlaVCKCj0ylgEV8-jxfMZAmbUewe78gsEQ&oe=643D9BD2',
+    },
+    {
+      name: 'Carmelo Kuo',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/188870233_4160305537369027_6659643968968492305_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ELHPqSs4TBIAX_uPrSM&_nc_ht=scontent-tpe1-1.xx&oh=00_AfCR-SutHa09EDbcw-cktxIKRFT89qFkkL9oL2d2GH3dGw&oe=64607BBC',
+    },
+  ];
+
+  itemsArr.forEach((item) => {
+    const { name, imgURL } = item;
+    htmlStr += renderRightItem(name, imgURL);
+  });
+
+  rightBlock.innerHTML = htmlStr;
+};
+
+renderRightBlock();
