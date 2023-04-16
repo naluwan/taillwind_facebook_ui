@@ -242,7 +242,7 @@ const renderStoryItem = (idx, nickName, imgUrl, name) => {
   divBox.classList.add('min-w-[120px]', 'flex-1', 'cursor-pointer', 'px-[4px]');
 
   divBox.innerHTML = `
-    <div class="relative overflow-hidden" id="story-${idx}">
+    <div class="relative overflow-hidden rounded-xl" id="story-${idx}">
       <div id="story-mask-${idx}" class="hidden absolute w-full h-full top-0 left-0 bg-black/20 z-20"></div>
       <div
         class="absolute left-4 top-4 flex h-[32px] w-[32px] items-center justify-center rounded-full bg-fb-card ring-4 ring-fb z-30"

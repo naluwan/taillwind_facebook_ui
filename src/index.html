@@ -240,17 +240,17 @@
       <div class="mx-auto w-full max-w-[720px] px-4">
         <!-- 限時動態 -->
         <div class="relative">
-          <div class="flex overflow-x-auto" id="story-list">
+          <div class="no-scrollbar flex overflow-x-auto" id="story-list">
             <div class="min-w-[120px] flex-1 cursor-pointer px-[4px]">
               <div class="flex h-full flex-col">
-                <div class="h-full overflow-hidden">
+                <div class="h-full overflow-hidden rounded-t-xl">
                   <img
                     src="https://scontent.ftpe14-1.fna.fbcdn.net/v/t1.18169-9/23519066_10203611914895538_2510838889747618336_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a4a2d7&_nc_ohc=k8ag7FwXSPsAX99oRkc&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfBYiMXRiDMjpGj73I1z2AxxDcrBVLDQ8sOYFk8_LCHaEQ&oe=6462FF80"
                     alt="avator"
                     class="h-full w-full object-cover duration-500 hover:scale-105"
                   />
                 </div>
-                <div class="relative bg-fb-card px-2 pb-2 pt-6">
+                <div class="relative rounded-b-xl bg-fb-card px-2 pb-2 pt-6">
                   <button
                     class="absolute -top-4 left-[calc(50%-16px)] flex h-[32px] w-[32px] items-center justify-center rounded-full bg-fb p-2 ring ring-fb-card focus:outline-none"
                   >
@@ -263,18 +263,9 @@
           </div>
 
           <button
-            class="popover-btn absolute -right-3 top-[calc(50%-22.5px)] z-10 h-[45px] w-[45px]"
+            class="popover-btn absolute -right-3 top-[calc(50%-22.5px)] z-30 h-[45px] w-[45px]"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="stroke-current text-white"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
+            <img src="https://bruce-fe-fb.web.app/image/right-arrow.svg" />
           </button>
         </div>
       </div>
