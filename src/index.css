@@ -8,6 +8,6 @@
   }
 
   .popover-panel {
-    @apply absolute right-0 top-12 z-10 w-[300px] rounded-lg border border-fb-input bg-fb-header p-4 shadow-lg lg:w-[360px];
+    @apply absolute right-0 top-12 w-[300px] rounded-lg border border-fb-input bg-fb-header p-4 shadow-lg lg:w-[360px];
   }
 }

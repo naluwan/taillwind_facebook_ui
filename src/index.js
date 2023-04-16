@@ -201,3 +201,88 @@ const renderRightBlock = () => {
 };
 
 renderRightBlock();
+
+// ------------ 限時動態 ------------
+const storyList = document.querySelector('#story-list');
+const storyItems = [
+  {
+    nickName: 'N',
+    imgUrl:
+      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341554864_553947350213146_6829164000854767559_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=a7iXIuozIlgAX-ohALG&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCJzwrrWjQHqt_CKX9zpkPTolmZp1rsg40e4DiuxaMbGA&oe=6440DB0D',
+    name: 'Nonna',
+  },
+  {
+    nickName: 'N',
+    imgUrl:
+      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341252250_5962912637137567_4064351953620710735_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=xdomJZAfVtAAX9qTXeo&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfAu4yvea5w2R2PyHbXcwF59waGedQuyavFp0k5lAdWeig&oe=64405030',
+    name: 'Naomi Chen',
+  },
+  {
+    nickName: 'E',
+    imgUrl:
+      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341183651_1188412618513761_4660501756852229241_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=uKiD94fSGNAAX_sc_kA&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCboYU-rGBDCoVVFB-Wu94YdDixxspXAMYCeI5Ipg6qlg&oe=64413960',
+    name: 'Eric Chang',
+  },
+  {
+    nickName: 'S',
+    imgUrl:
+      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341327118_728939478926394_1253322147111460141_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=HSE09UsMMnwAX9Q3b05&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfD_TpuWk3E3pnD1edSY38QfyEmr261t9UVM4lguy2nw_g&oe=64403065',
+    name: 'Shane Lin',
+  },
+  {
+    nickName: 'C',
+    imgUrl:
+      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341218539_988715502487248_2169563022744842252_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=SmH9bnzl6DwAX8VlVs8&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCMv7ZSZ_3lGGjfh2K5qoz52V5r_WMkXLDRvkV7wfHLHw&oe=643FC37F',
+    name: 'Carmelo Kuo',
+  },
+];
+
+const renderStoryItem = (idx, nickName, imgUrl, name) => {
+  const divBox = document.createElement('div');
+  divBox.classList.add('min-w-[120px]', 'flex-1', 'cursor-pointer', 'px-[4px]');
+
+  divBox.innerHTML = `
+    <div class="relative overflow-hidden" id="story-${idx}">
+      <div id="story-mask-${idx}" class="hidden absolute w-full h-full top-0 left-0 bg-black/20 z-20"></div>
+      <div
+        class="absolute left-4 top-4 flex h-[32px] w-[32px] items-center justify-center rounded-full bg-fb-card ring-4 ring-fb z-30"
+      >
+        <p class="text-sm text-white">${nickName}</p>
+      </div>
+      <div
+        class="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-black/30 to-transparent z-20"
+      ></div>
+      <img
+        id="story-img-${idx}"
+        class="h-full w-full duration-200"
+        src="${imgUrl}"
+      />
+      <p class="absolute bottom-2 left-2 text-white">${name}</p>
+    </div>
+  `;
+
+  storyList.appendChild(divBox);
+
+  // hover時，增加遮罩和放大1.05倍
+  divBox.addEventListener('mouseover', () => {
+    const storyMask = document.querySelector(`#story-mask-${idx}`);
+    const storyImg = document.querySelector(`#story-img-${idx}`);
+
+    storyMask.classList.remove('hidden');
+    storyImg.classList.add('scale-105');
+  });
+
+  // blur時，移除遮罩和恢復原大小
+  divBox.addEventListener('mouseout', () => {
+    const storyMask = document.querySelector(`#story-mask-${idx}`);
+    const storyImg = document.querySelector(`#story-img-${idx}`);
+
+    storyMask.classList.add('hidden');
+    storyImg.classList.remove('scale-105');
+  });
+};
+
+storyItems.forEach((storyItem, idx) => {
+  const { nickName, imgUrl, name } = storyItem;
+  renderStoryItem(idx, nickName, imgUrl, name);
+});
