@@ -177,13 +177,11 @@ const renderRightBlock = () => {
     },
     {
       name: 'Eric Chang',
-      imgURL:
-        'https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/317811309_5442004795926380_4743840999032164787_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=emeTdx9S2FkAX_Tq3uh&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAIojHEpJlCf33ZxnXEziqgCOrR5NxR3GcWO8vVwuzkdQ&oe=643E881B',
+      imgURL: 'https://i.imgur.com/wBaUZDr.jpg',
     },
     {
       name: 'Shane Lin',
-      imgURL:
-        'https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/245342708_5052225001455280_3427608857536564216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=J5DR4aGFndoAX__qezt&_nc_ht=scontent-tpe1-1.xx&oh=00_AfBU9wxbZnmidlaVCKCj0ylgEV8-jxfMZAmbUewe78gsEQ&oe=643D9BD2',
+      imgURL: 'https://i.imgur.com/eNrWvUo.jpg',
     },
     {
       name: 'Carmelo Kuo',
@@ -207,32 +205,27 @@ const storyList = document.querySelector('#story-list');
 const storyItems = [
   {
     nickName: 'N',
-    imgUrl:
-      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341554864_553947350213146_6829164000854767559_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=a7iXIuozIlgAX-ohALG&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCJzwrrWjQHqt_CKX9zpkPTolmZp1rsg40e4DiuxaMbGA&oe=6440DB0D',
+    imgUrl: 'https://i.imgur.com/cUcpgWv.jpg',
     name: 'Nonna',
   },
   {
     nickName: 'N',
-    imgUrl:
-      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341252250_5962912637137567_4064351953620710735_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=xdomJZAfVtAAX9qTXeo&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfAu4yvea5w2R2PyHbXcwF59waGedQuyavFp0k5lAdWeig&oe=64405030',
+    imgUrl: 'https://i.imgur.com/nMbMdeV.jpg',
     name: 'Naomi Chen',
   },
   {
     nickName: 'E',
-    imgUrl:
-      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341183651_1188412618513761_4660501756852229241_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=uKiD94fSGNAAX_sc_kA&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCboYU-rGBDCoVVFB-Wu94YdDixxspXAMYCeI5Ipg6qlg&oe=64413960',
+    imgUrl: 'https://i.imgur.com/wBaUZDr.jpg',
     name: 'Eric Chang',
   },
   {
     nickName: 'S',
-    imgUrl:
-      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341327118_728939478926394_1253322147111460141_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=HSE09UsMMnwAX9Q3b05&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfD_TpuWk3E3pnD1edSY38QfyEmr261t9UVM4lguy2nw_g&oe=64403065',
+    imgUrl: 'https://i.imgur.com/HT4ERfW.jpg5',
     name: 'Shane Lin',
   },
   {
     nickName: 'C',
-    imgUrl:
-      'https://scontent.ftpe14-1.fna.fbcdn.net/v/t39.30808-6/341218539_988715502487248_2169563022744842252_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5b7eaf&_nc_ohc=SmH9bnzl6DwAX8VlVs8&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfCMv7ZSZ_3lGGjfh2K5qoz52V5r_WMkXLDRvkV7wfHLHw&oe=643FC37F',
+    imgUrl: 'https://i.imgur.com/Y1jk5GQ.jpg',
     name: 'Carmelo Kuo',
   },
 ];
