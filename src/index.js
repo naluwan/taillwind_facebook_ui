@@ -188,6 +188,57 @@ const renderRightBlock = () => {
       imgURL:
         'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/188870233_4160305537369027_6659643968968492305_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ELHPqSs4TBIAX_uPrSM&_nc_ht=scontent-tpe1-1.xx&oh=00_AfCR-SutHa09EDbcw-cktxIKRFT89qFkkL9oL2d2GH3dGw&oe=64607BBC',
     },
+    {
+      name: 'Michael Jordan',
+      imgURL: 'https://cdn-japantimes.com/wp-content/uploads/2022/12/np_file_199358-scaled.jpeg',
+    },
+    {
+      name: 'Kobe Bryant',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/13177146_10154154195750419_4907503626014205768_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gwkFl-F0UvkAX9SzFA5&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAUR0uET6dVtuO4tdoLSZScdXdw_IXVR1RKv3XDHKH5UA&oe=64855F6B',
+    },
+    {
+      name: "Shaquille O'Neal",
+      imgURL:
+        'https://www.al.com/resizer/HaDHp8bDFt4qZo5JkmFURH-i9JA=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/E7TJQAUUNZEBLDPKJ7AJAZ7ZYE.jpg',
+    },
+    {
+      name: 'Carmelo Anthony',
+      imgURL: 'https://pbs.twimg.com/profile_images/1336430445383327745/kMWB9JJ9_400x400.jpg',
+    },
+    {
+      name: 'LeBron James',
+      imgURL:
+        'https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/player-page/2022-2023/2223_PlayerImage_James_1920x2304.jpg',
+    },
+    {
+      name: 'P.J. Tucker',
+      imgURL: 'https://thesixersense.com/wp-content/uploads/imagn-images/2017/07/19122294.jpeg',
+    },
+    {
+      name: 'Bronny James',
+      imgURL:
+        'https://s.yimg.com/ny/api/res/1.2/V8wuk9ydVZanWtzAB1y5qA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ2Nw--/https://s.yimg.com/os/creatr-uploaded-images/2023-05/db2ea060-ed86-11ed-bedf-09d237b49f41',
+    },
+    {
+      name: 'Ja Morant',
+      imgURL:
+        'https://imageio.forbes.com/specials-images/imageserve/639a0b01d48c81866c79bb22/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&width=1200',
+    },
+    {
+      name: 'Luck Doncic',
+      imgURL: 'https://pbs.twimg.com/media/Fhs8JSZakAAk0m9.jpg:large',
+    },
+    {
+      name: 'Nikola Jokic',
+      imgURL:
+        'https://www.nbcsports.com/sites/rsnunited/files/article/hero/getty-nikola-jokic-15.jpg',
+    },
+    {
+      name: 'Giannis Antetokounmpo',
+      imgURL:
+        'https://i0.wp.com/clutch.hk/wp-content/uploads/2018/08/Giannis-20180811.png?fit=1040%2C700&ssl=1',
+    },
   ];
 
   itemsArr.forEach((item) => {
@@ -279,3 +330,128 @@ storyItems.forEach((storyItem, idx) => {
   const { nickName, imgUrl, name } = storyItem;
   renderStoryItem(idx, nickName, imgUrl, name);
 });
+
+// ------------ 輪播包廂 ------------
+
+const renderLiveItem = () => {
+  const itemsArr = [
+    {
+      name: 'NaLuWan',
+      imgURL:
+        'https://scontent.ftpe14-1.fna.fbcdn.net/v/t1.18169-9/23519066_10203611914895538_2510838889747618336_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a4a2d7&_nc_ohc=k8ag7FwXSPsAX99oRkc&_nc_ht=scontent.ftpe14-1.fna&oh=00_AfBYiMXRiDMjpGj73I1z2AxxDcrBVLDQ8sOYFk8_LCHaEQ&oe=6462FF80',
+    },
+    { name: 'Nonna', imgURL: 'https://i.imgur.com/tQcTOLH.jpg' },
+    {
+      name: 'Naomi Chen',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/65873280_2568412379835598_4929082980615323648_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TgX5JNz4HIgAX-o5EPl&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAzNyoTMjD4Q5h_7xYaVAuiicIWrNsiZBfdZdfICSojaQ&oe=64608416',
+    },
+    {
+      name: 'Eric Chang',
+      imgURL: 'https://i.imgur.com/wBaUZDr.jpg',
+    },
+    {
+      name: 'Shane Lin',
+      imgURL: 'https://i.imgur.com/eNrWvUo.jpg',
+    },
+    {
+      name: 'Carmelo Kuo',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/188870233_4160305537369027_6659643968968492305_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ELHPqSs4TBIAX_uPrSM&_nc_ht=scontent-tpe1-1.xx&oh=00_AfCR-SutHa09EDbcw-cktxIKRFT89qFkkL9oL2d2GH3dGw&oe=64607BBC',
+    },
+    {
+      name: 'Michael Jordan',
+      imgURL: 'https://cdn-japantimes.com/wp-content/uploads/2022/12/np_file_199358-scaled.jpeg',
+    },
+    {
+      name: 'Kobe Bryant',
+      imgURL:
+        'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/13177146_10154154195750419_4907503626014205768_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gwkFl-F0UvkAX9SzFA5&_nc_ht=scontent-tpe1-1.xx&oh=00_AfAUR0uET6dVtuO4tdoLSZScdXdw_IXVR1RKv3XDHKH5UA&oe=64855F6B',
+    },
+    {
+      name: "Shaquille O'Neal",
+      imgURL:
+        'https://www.al.com/resizer/HaDHp8bDFt4qZo5JkmFURH-i9JA=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/E7TJQAUUNZEBLDPKJ7AJAZ7ZYE.jpg',
+    },
+    {
+      name: 'Carmelo Anthony',
+      imgURL: 'https://pbs.twimg.com/profile_images/1336430445383327745/kMWB9JJ9_400x400.jpg',
+    },
+    {
+      name: 'LeBron James',
+      imgURL:
+        'https://lalweb.blob.core.windows.net/public/lakers/product-marketing/web/player-page/2022-2023/2223_PlayerImage_James_1920x2304.jpg',
+    },
+    {
+      name: 'P.J. Tucker',
+      imgURL: 'https://thesixersense.com/wp-content/uploads/imagn-images/2017/07/19122294.jpeg',
+    },
+    {
+      name: 'Bronny James',
+      imgURL:
+        'https://s.yimg.com/ny/api/res/1.2/V8wuk9ydVZanWtzAB1y5qA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ2Nw--/https://s.yimg.com/os/creatr-uploaded-images/2023-05/db2ea060-ed86-11ed-bedf-09d237b49f41',
+    },
+    {
+      name: 'Ja Morant',
+      imgURL:
+        'https://imageio.forbes.com/specials-images/imageserve/639a0b01d48c81866c79bb22/0x0.jpg?format=jpg&crop=1920,1080,x0,y0,safe&width=1200',
+    },
+    {
+      name: 'Luck Doncic',
+      imgURL: 'https://pbs.twimg.com/media/Fhs8JSZakAAk0m9.jpg:large',
+    },
+    {
+      name: 'Nikola Jokic',
+      imgURL:
+        'https://www.nbcsports.com/sites/rsnunited/files/article/hero/getty-nikola-jokic-15.jpg',
+    },
+    {
+      name: 'Giannis Antetokounmpo',
+      imgURL:
+        'https://i0.wp.com/clutch.hk/wp-content/uploads/2018/08/Giannis-20180811.png?fit=1040%2C700&ssl=1',
+    },
+  ];
+
+  itemsArr.forEach((item) => {
+    const { imgURL } = item;
+    renderSlideItem(imgURL);
+  });
+
+  new Swiper('.fb-live', {
+    slidesPerView: 'auto',
+    loop: false,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+};
+
+const renderSlideItem = (url) => {
+  const swiperWrapperLive = document.querySelector('#swiper-wrapper-live');
+  const divBox = document.createElement('div');
+  divBox.classList.add('swiper-slide');
+
+  const html = `
+    <div class="w-[55px]">
+      <div class="relative w-[40px] cursor-pointer">
+        <div class=" h-[40px] w-[40px] overflow-hidden rounded-full">
+          <img
+            src="${url}"
+            alt="avatar"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div
+          class="absolute bottom-0 right-0 h-[10px] w-[10px] rounded-full bg-green-500 ring ring-gray-900"
+        ></div>
+      </div>
+    </div>
+  `;
+
+  divBox.innerHTML = html;
+
+  swiperWrapperLive.appendChild(divBox);
+};
+
+renderLiveItem();
